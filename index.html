@@ -6,10 +6,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta key="theme-color" name="theme-color" content="#C0F0C0" />
+    <style media="screen" lang="css">
+      * {
+        font-family: Monaco, Andale Mono, monospace;
+      }
+    </style>
   </head>
 
   <body>
-    <article class="">
+    <article>
       <header>
         <h1>Hello, I'm Cody Hopper</h1>
         <p>Check back on this page later!</p>
@@ -102,6 +107,16 @@
       </p>
 
     </footer>
+
   </body>
+
+  <script type="text/javascript">
+    let bg = document.querySelector("body");
+    bg.addEventListener('mousemove', function(event) {
+      let x = event.clientX;
+      let y = event.clientY;
+      bg.style.backgroundColor = 'rgba(calc(' + y + ' - 10), calc(255 - ((' + x + ') + (' + y + '))), calc(' + x + ' - 10), .05)';
+    });
+  </script>
 
 </html>
