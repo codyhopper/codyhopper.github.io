@@ -9,6 +9,8 @@
     <style media="screen" lang="css">
       * {
         font-family: Monaco, Andale Mono, monospace;
+        color: #2c2c2c;
+        list-style-type: square;
       }
     </style>
   </head>
@@ -115,7 +117,7 @@
     bg.addEventListener('mousemove', function(event) {
       let x = event.clientX;
       let y = event.clientY;
-      bg.style.backgroundColor = 'rgba(calc(' + y + ' - 10), calc(255 - ((' + x + ') + (' + y + '))), calc(' + x + ' - 10), .05)';
+      bg.style.backgroundColor = 'rgba(calc(' + y + ' - 10), calc(255 - ((' + x + ') + (' + y + '))), calc(' + x + ' - 10), .025)';
     });
   </script>
 
