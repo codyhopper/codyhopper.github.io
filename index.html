@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <title>Cody Hopper</title>
+    <!-- If you're reading this, let's talk! Email's at the bottom.-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta key="theme-color" name="theme-color" content="#C0F0C0"/>
@@ -12,23 +12,24 @@
         src: url("./standard-book-webfont.ttf");
       }
       :root {
+        /* colors */
         --black: #2c2c2c;
-        --pad1: 2rem;
-        --mb: 2rem;
+        /* layout */
+        --mb1: 2.5rem;
       }
       * {
         font-family: StandardBook, sans-serif;
         color: var(--black);
         list-style-type: square;
       }
-      body {
+      main {
         max-width: 750px;
         margin: 0 auto;
-        padding-top: var(--pad1);
+        padding: 2rem 0.61rem 0;
       }
       fieldset {
         border: thin solid var(--black);
-        margin-bottom: var(--mb);
+        margin-bottom: var(--mb1);
       }
       legend {
         outline: thin solid var(--black);
@@ -38,144 +39,181 @@
         margin-bottom: 0.25rem;
       }
       section {
-        margin-bottom: var(--mb);
+        margin-bottom: var(--mb1);
       }
       p {
         line-height: 1.54em;
+      }
+      u, a {
+        text-decoration: none
+      }
+      u:hover, a:hover {
+        text-decoration: underline;
+      }
+      td {
+        padding-right: 3rem
       }
       footer {
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
-        margin-bottom: var(--mb)
+        margin-bottom: var(--mb1);
       }
     </style>
   </head>
 
   <body>
-    <h1>Hello, my name's Cody Hopper.</h1>
-    <fieldset>
-      <legend>Snapshot</legend>
-      <ul>
-        <li>Currently a Frontend Designer at
-          <a href="https://oldspeake.io">Oldspeake.io</a>.
-        </li>
-        <li>Formerly a Digital Designer at West Cary Group</li>
-        <li>Before that a Print Assistant & Graphic Designer at Virginia Commonwealth University</li>
-        <li>
-          <a href="https://codyhopper.com">This</a>
-          is a link to my current portfolio site.</li>
-      </ul>
-    </fieldset>
+    <!-- Basically a massive link board full of stuff that I like and find interesting. It's cool cause people have to move their cursor to find links, which makes the bg change color. -->
+    <main>
+      <h1>Hello, my name’s Cody Hopper.</h1>
+      <fieldset>
+        <legend>Snapshot</legend>
+        <ul>
+          <li>
+            Currently a Frontend Designer at
+            <a href="https://oldspeake.io">Oldspeake.io</a>.
+          </li>
+          <li>
+            Formerly a Digital Designer at
+            <a href="https://westcarygroup.com/">West Cary Group</a>.
+          </li>
+          <li>
+            Before that a Print Assistant & Graphic Designer at
+            <a href="https://arts.vcu.edu/academics/explore-our-facilities/golab/">Virginia Commonwealth University</a>.
+          </li>
+          <li>
+            Obsessed with <a href="https://cookieandkate.com/naturally-sweetened-pecan-pie-recipe/">maple</a>-<a href="https://www.kingarthurbaking.com/recipes/maple-doughnuts-recipe">flavored</a> <a href="https://www.thespruceeats.com/maple-pecan-latte-4778954">everything</a>.
+          </li>
+          <li>
+            Make sure to check out my current <a href="https://codyhopper.com">portfolio site</a>.
+          </li>
+        </ul>
+      </fieldset>
 
-    <template id="">
-      <meter value="50" min="0" max="100"></meter>
-      <progress value="50" max="100">50%</progress>
-
-      <section>
-        <table>
-          <caption>This is table caption</caption>
-          <thead>
-            <th>table cell header</th>
-            <th>table cell header</th>
-            <th>table cell header</th>
-            <th>table cell header</th>
-          </thead>
-          <tbody>
-            <tr>
-              <td>table cell enclosure</td>
-              <td>table cell enclosure</td>
-              <td>table cell enclosure</td>
-              <td>table cell enclosure</td>
-            </tr>
-            <tr>
-              <td>table cell enclosure</td>
-              <td>table cell enclosure</td>
-              <td>table cell enclosure</td>
-              <td>table cell enclosure</td>
-            </tr>
-            <tr>
-              <td>table cell enclosure</td>
-              <td>table cell enclosure</td>
-              <td>table cell enclosure</td>
-              <td>table cell enclosure</td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <tr>
-              <td>table cell enclosure</td>
-              <td>table cell enclosure</td>
-              <td>table cell enclosure</td>
-              <td>table cell enclosure</td>
-            </tr>
-          </tfoot>
-        </table>
-      </section>
-    </template>
-
-    <section>
-      <h2>Work</h2>
-      <p>I spend a lot of time in code editors and design programs.</p>
-    </section>
-    <section>
-      <h2>About Me</h2>
-      <p>I like every aspect of the design process. I feel at my peak when I can deliver a well-considered and researched product.</p>
-    </section>
-    <section>
-      <h2>Approach</h2>
-      <p>I begin every project with tons of research. Then my job becomes honing all that information into a cohesive solution.</p>
-    </section>
-    <section>
-      <h2>Views</h2>
-      <p>Creativity is a biased process. It's important to acknowledge that and take a close look at who we're including or excluding, who have we have or have not heard from, who is or isn't invited into this space.</p>
-    </section>
-    <section>
-      <h2>Contact Me</h2>
-      <small>
-        <span style="text-decoration: underline;">hello [at] codyhopper.com</span><br>
-        <a href="https://codyhopper.com">codyhopper.com</a><br>
-      </small>
-    </section>
-
-    <template id="">
-
-      <p>
+      <template id="">
+        <meter value="50" min="0" max="100"></meter>
+        <progress value="50" max="100">50%</progress>
+        <section>
+          <table>
+            <caption>This is table caption</caption>
+            <thead>
+              <th>table cell header</th>
+              <th>table cell header</th>
+              <th>table cell header</th>
+              <th>table cell header</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>table cell enclosure</td>
+                <td>table cell enclosure</td>
+                <td>table cell enclosure</td>
+                <td>table cell enclosure</td>
+              </tr>
+              <tr>
+                <td>table cell enclosure</td>
+                <td>table cell enclosure</td>
+                <td>table cell enclosure</td>
+                <td>table cell enclosure</td>
+              </tr>
+              <tr>
+                <td>table cell enclosure</td>
+                <td>table cell enclosure</td>
+                <td>table cell enclosure</td>
+                <td>table cell enclosure</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td>table cell enclosure</td>
+                <td>table cell enclosure</td>
+                <td>table cell enclosure</td>
+                <td>table cell enclosure</td>
+              </tr>
+            </tfoot>
+          </table>
+        </section>
         <details closed="closed">
           <summary>Where I'm located</summary>
           <span>Appalachia, Virginia, United States of America</span>
         </details>
-      </p>
-      <p>
         <details closed="closed">
           <summary>Where I Studied</summary>
           <span>Virginia Commonwealth University, Magna Cum Laude</span>
         </details>
-      </p>
-      <p>
         <details closed="closed">
           <summary>What I Studied</summary>
           <span>Bachelors of Fine Arts in Graphic Design, Minor in General Business</span>
         </details>
-      </p>
-    </template>
+      </template>
+
+      <section>
+        <h2>Work</h2>
+        <p>I spend a lot of time in
+          <a href="https://atom.io/">code editors</a>
+          and
+          <a href="https://www.figma.com/">design programs</a>.</p>
+      </section>
+
+      <section>
+        <h2>About Me</h2>
+        <p>I like every aspect of the design process. I feel at my peak when I can deliver a well-considered and researched product. Empathy is part of my design approach as well as my day-to-day life.</p>
+      </section>
+
+      <section>
+        <h2>Approach</h2>
+        <p>I begin every project with tons of research. Then my job becomes honing all that information into a cohesive solution. Before anything else, I'm learning.</p>
+      </section>
+
+      <section>
+        <h2>Views</h2>
+        <p>Creativity is inherently a biased process. Together let's take a close look at who we're including or excluding, who have we have or have not heard from, who is or isn't invited into this space. I aim to turn that dissatisfaction into a better
+          experience for everyone.</p>
+      </section>
+
+      <section>
+        <h2>Contact Me</h2>
+        <table>
+          <tr>
+            <td>
+              <u>hello [at] codyhopper.com</u></td>
+            <td>
+              <a href="https://linkedin.com/in/codyhopper">Linkedin</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="https://codyhopper.com">codyhopper.com</a>
+            </td>
+            <td>
+              <a href="https://www.are.na/cody-hopper">Are.na</a>
+            </td>
+          </tr>
+          <tr>
+            <td><u>@codyhopper</u></td>
+            <td><a href="https://github.com/codyhopper">Github</a></td>
+          </tr>
+        </table>
+
+      </div>
+    </section>
 
     <footer>
-      <small>This site and all its contents © 2021 Cody Hopper</small>
-      <small>Set in Standard Book designed by
-        <a href="https://github.com/brycewilner">Bryce Wilner</a>
+      <small>This site &copy; 2021 Cody Hopper.</small>
+      <small>Set in Standard Book, an Open Source Typface, designed by
+        <a href="https://github.com/brycewilner">Bryce Wilner</a>.
       </small>
-
     </footer>
+  </main>
 
-  </body>
+</body>
 
-  <script type="text/javascript">
-    let bg = document.querySelector("body");
-    bg.addEventListener('mousemove', function(event) {
-      let x = event.clientX;
-      let y = event.clientY;
-      bg.style.backgroundColor = 'rgba(calc(' + y + ' - 10), calc(255 - ((' + x + ') + (' + y + '))), calc(' + x + ' - 10), .025)';
-    });
-  </script>
+<script type="text/javascript">
+  let bg = document.querySelector("body");
+  bg.addEventListener('mousemove', function(event) {
+    let x = event.clientX;
+    let y = event.clientY;
+    bg.style.backgroundColor = 'rgba(' + y + ', calc(255 - ((' + x + ') - (' + y + '))), ' + x + ', .05)';
+  });
+</script>
 
 </html>
