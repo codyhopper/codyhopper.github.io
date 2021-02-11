@@ -5,29 +5,68 @@
     <title>Cody Hopper</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta key="theme-color" name="theme-color" content="#C0F0C0" />
+    <meta key="theme-color" name="theme-color" content="#C0F0C0"/>
     <style media="screen" lang="css">
+      @font-face {
+        font-family: "StandardBook";
+        src: url("./standard-book-webfont.ttf");
+      }
+      :root {
+        --black: #2c2c2c;
+        --pad1: 2rem;
+        --mb: 2rem;
+      }
       * {
-        font-family: Monaco, Andale Mono, monospace;
-        color: #2c2c2c;
+        font-family: StandardBook, sans-serif;
+        color: var(--black);
         list-style-type: square;
+      }
+      body {
+        max-width: 750px;
+        margin: 0 auto;
+        padding-top: var(--pad1);
+      }
+      fieldset {
+        border: thin solid var(--black);
+        margin-bottom: var(--mb);
+      }
+      legend {
+        outline: thin solid var(--black);
+        padding: 0.25rem;
+      }
+      li {
+        margin-bottom: 0.25rem;
+      }
+      section {
+        margin-bottom: var(--mb);
+      }
+      p {
+        line-height: 1.54em;
+      }
+      footer {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        margin-bottom: var(--mb)
       }
     </style>
   </head>
 
   <body>
-    <article>
-      <header>
-        <h1>Hello, I'm Cody Hopper</h1>
-        <p>Check back on this page later!</p>
-      </header>
+    <h1>Hello, my name's Cody Hopper.</h1>
+    <fieldset>
+      <legend>Snapshot</legend>
       <ul>
-        <li>Currently a <kbd>Frontend Designer</kbd> at <a href="https://oldspeake.io">Oldspeake.io</a></li>
-        <li>Formerly a <kbd>Digital Designer</kbd> at West Cary Group</li>
-        <li>Before that a <kbd>Print Assistant & Graphic Designer</kbd> at Virginia Commonwealth University</li>
+        <li>Currently a Frontend Designer at
+          <a href="https://oldspeake.io">Oldspeake.io</a>.
+        </li>
+        <li>Formerly a Digital Designer at West Cary Group</li>
+        <li>Before that a Print Assistant & Graphic Designer at Virginia Commonwealth University</li>
+        <li>
+          <a href="https://codyhopper.com">This</a>
+          is a link to my current portfolio site.</li>
       </ul>
-    </p><a href="https://codyhopper.com">This</a> is a link to my current portfolio site.<p>
-    </article>
+    </fieldset>
 
     <template id="">
       <meter value="50" min="0" max="100"></meter>
@@ -74,39 +113,57 @@
       </section>
     </template>
 
-
-    <aside class="">
-
-    </aside>
-
-
-    <footer>
-      <hr>
+    <section>
+      <h2>Work</h2>
+      <p>I spend a lot of time in code editors and design programs.</p>
+    </section>
+    <section>
       <h2>About Me</h2>
-      <address>
-        Cody Hopper<br>
-        <small>hello@codyhopper.com<br>
-        codyhopper.com<br></small>
-      </address>
+      <p>I like every aspect of the design process. I feel at my peak when I can deliver a well-considered and researched product.</p>
+    </section>
+    <section>
+      <h2>Approach</h2>
+      <p>I begin every project with tons of research. Then my job becomes honing all that information into a cohesive solution.</p>
+    </section>
+    <section>
+      <h2>Views</h2>
+      <p>Creativity is a biased process. It's important to acknowledge that and take a close look at who we're including or excluding, who have we have or have not heard from, who is or isn't invited into this space.</p>
+    </section>
+    <section>
+      <h2>Contact Me</h2>
+      <small>
+        <span style="text-decoration: underline;">hello [at] codyhopper.com</span><br>
+        <a href="https://codyhopper.com">codyhopper.com</a><br>
+      </small>
+    </section>
+
+    <template id="">
 
       <p>
-        <details closed>
+        <details closed="closed">
           <summary>Where I'm located</summary>
           <span>Appalachia, Virginia, United States of America</span>
         </details>
       </p>
       <p>
-        <details closed>
+        <details closed="closed">
           <summary>Where I Studied</summary>
           <span>Virginia Commonwealth University, Magna Cum Laude</span>
         </details>
       </p>
       <p>
-        <details closed>
+        <details closed="closed">
           <summary>What I Studied</summary>
           <span>Bachelors of Fine Arts in Graphic Design, Minor in General Business</span>
         </details>
       </p>
+    </template>
+
+    <footer>
+      <small>This site and all its contents © 2021 Cody Hopper</small>
+      <small>Set in Standard Book designed by
+        <a href="https://github.com/brycewilner">Bryce Wilner</a>
+      </small>
 
     </footer>
 
