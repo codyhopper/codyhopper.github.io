@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "StandardBook";
+  src: url("./standard-book-webfont.ttf");
+}
+
+:root {
+  /* colors */
+  --black: #2c2c2c;
+  /* layout */
+  --mb1: 2.5rem;
+}
+
+main {
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 2rem 0.61rem 0;
+  font-family: StandardBook, sans-serif;
+  color: var(--black);
+  list-style-type: square;
+}
+
+fieldset {
+  border: thin solid var(--black);
+  margin-bottom: var(--mb1);
+}
+
+legend {
+  outline: thin solid var(--black);
+  padding: 0.25rem;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+section {
+  margin-bottom: var(--mb1);
+}
+
+p {
+  line-height: 1.54em;
+}
+
+a,
+u {
+  color: currentColor;
+  text-decoration: none;
+}
+
+a:hover,
+u:hover {
+  text-decoration: underline dashed;
+}
+
+td {
+  padding-right: 3rem;
+}
+
+footer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-bottom: var(--mb1);
+}
+
+@media (hover: none) {
+  a,
+  u {
+    text-decoration: underline;
+  }
+}
