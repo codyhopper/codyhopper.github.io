@@ -59,6 +59,11 @@
         justify-content: space-between;
         margin-bottom: var(--mb1);
       }
+      @media (hover: none) {
+        u, a {
+          text-decoration: underline
+        }
+      }
     </style>
   </head>
 
@@ -205,15 +210,8 @@
     </footer>
   </main>
 
+  <script src="./main.js"></script>
 </body>
 
-<script type="text/javascript">
-  let bg = document.querySelector("body");
-  bg.addEventListener('mousemove', function(event) {
-    let x = event.clientX;
-    let y = event.clientY;
-    bg.style.backgroundColor = 'rgba(' + y + ', calc(255 - ((' + x + ') - (' + y + '))), ' + x + ', .05)';
-  });
-</script>
 
 </html>
