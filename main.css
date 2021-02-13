@@ -49,7 +49,7 @@ u {
 
 a:hover,
 u:hover {
-  text-decoration: underline dashed;
+  text-decoration: underline;
 }
 
 td {
