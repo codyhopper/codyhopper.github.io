@@ -12,6 +12,8 @@
 
 body {
   transition-duration: 100ms;
+  margin: 0
+  padding: 0
   transition-timing-function: ease;
 }
 
@@ -46,9 +48,9 @@ p {
   line-height: 1.54em;
 
 }
-u:not([class]), 
+u:not([class]),
 a:not([class]) {
-  color: currentColor; 
+  color: currentColor;
   text-decoration: none;
   background-image: linear-gradient(transparent calc(100% - .05em), currentColor 2px);
   background-repeat: no-repeat;
@@ -62,6 +64,11 @@ a:not([class]):hover {
   animation: 500ms both ease underline
 }
 
+pre {
+  margin: 0;
+  padding: 0;
+}
+
 td {
   padding-right: 3rem;
 }
@@ -71,6 +78,23 @@ footer {
   flex-flow: row nowrap;
   justify-content: space-between;
   margin-bottom: var(--mb1);
+}
+
+[henryfound] {
+  display: none;
+}
+
+[henryhidden] {
+  position: relative
+  display: inline-block;
+}
+
+[henryhidden]:hover {
+  display: none;
+}
+
+[henryhidden]:hover + [henryfound] {
+  display: inline-block;
 }
 
 @keyframes underline {
